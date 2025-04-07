@@ -64,7 +64,7 @@ def mph_to_kmph(mph):
     return mph / 0.621371
 
 def meters_per_sec_to_feet_per_sec(mps):
-    return mps * 3.2808
+    return mps * 3.28084
 
 def feet_per_sec_to_meters_per_sec(fps):
     return fps / 3.28084
