@@ -1,3 +1,4 @@
+# Length & Distance Conversions
 def meters_to_feet(meters):
     return meters * 3.28084
 
@@ -10,6 +11,7 @@ def kilometers_to_miles(km):
 def miles_to_kilometers(miles):
     return miles / 0.621371
 
+# Weight & Mass Conversions
 def kilograms_to_pounds(kg):
     return kg * 2.20462
 
@@ -22,6 +24,7 @@ def grams_to_ounces(grams):
 def ounces_to_grams(ounces):
     return ounces / 0.035274
 
+# Temperature Conversions
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 
@@ -34,6 +37,7 @@ def celsius_to_kelvin(celsius):
 def kelvin_to_celsius(kelvin):
     return kelvin - 273.15
 
+# Time Conversions
 def hours_to_minutes(hours):
     return hours * 60
 
@@ -47,11 +51,12 @@ def weeks_to_days(weeks):
     return weeks * 7
 
 def days_to_months(days):
-    return days / 30.44  # Approximate value
+    return days / 30.44  # Approximate average number of days in a month
 
 def months_to_days(months):
     return months * 30.44
 
+# Speed Conversions
 def kmph_to_mph(kmph):
     return kmph * 0.621371
 
@@ -64,6 +69,7 @@ def meters_per_sec_to_feet_per_sec(mps):
 def feet_per_sec_to_meters_per_sec(fps):
     return fps / 3.28084
 
+# Volume & Capacity Conversions
 def liters_to_gallons(liters):
     return liters * 0.264172
 
@@ -76,9 +82,11 @@ def milliliters_to_fluid_ounces(ml):
 def fluid_ounces_to_milliliters(fl_oz):
     return fl_oz / 0.033814
 
+# Main program interface
 def main():
     print("Unit Conversion Program")
     while True:
+        # Display main menu
         print("\nChoose a category:")
         print("1. Length & Distance")
         print("2. Weight & Mass")
@@ -90,6 +98,7 @@ def main():
         
         choice = input("Enter your choice: ")
         
+        # Length & Distance
         if choice == "1":
             value = float(input("Enter value: "))
             print("1. Meters to Feet\n2. Feet to Meters\n3. Kilometers to Miles\n4. Miles to Kilometers")
@@ -103,6 +112,7 @@ def main():
             elif sub_choice == "4":
                 print(f"{value} miles = {miles_to_kilometers(value):.2f} km")
 
+        # Weight & Mass
         elif choice == "2":
             value = float(input("Enter value: "))
             print("1. Kilograms to Pounds\n2. Pounds to Kilograms\n3. Grams to Ounces\n4. Ounces to Grams")
@@ -116,6 +126,7 @@ def main():
             elif sub_choice == "4":
                 print(f"{value} ounces = {ounces_to_grams(value):.2f} grams")
 
+        # Temperature
         elif choice == "3":
             value = float(input("Enter value: "))
             print("1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n3. Celsius to Kelvin\n4. Kelvin to Celsius")
@@ -129,6 +140,7 @@ def main():
             elif sub_choice == "4":
                 print(f"{value}K = {kelvin_to_celsius(value):.2f}°C")
 
+        # Time
         elif choice == "4":
             value = float(input("Enter value: "))
             print("1. Hours to Minutes\n2. Minutes to Hours\n3. Days to Weeks\n4. Weeks to Days\n5. Days to Months\n6. Months to Days")
@@ -146,6 +158,7 @@ def main():
             elif sub_choice == "6":
                 print(f"{value} months = {months_to_days(value):.2f} days")
 
+        # Speed
         elif choice == "5":
             value = float(input("Enter value: "))
             print("1. km/h to mph\n2. mph to km/h\n3. m/s to ft/s\n4. ft/s to m/s")
@@ -159,6 +172,7 @@ def main():
             elif sub_choice == "4":
                 print(f"{value} ft/s = {feet_per_sec_to_meters_per_sec(value):.2f} m/s")
 
+        # Volume & Capacity
         elif choice == "6":
             value = float(input("Enter value: "))
             print("1. Liters to Gallons\n2. Gallons to Liters\n3. Milliliters to Fluid Ounces\n4. Fluid Ounces to Milliliters")
@@ -172,11 +186,14 @@ def main():
             elif sub_choice == "4":
                 print(f"{value} fl oz = {fluid_ounces_to_milliliters(value):.2f} ml")
 
+        # Exit program
         elif choice == "7":
             break
 
+        # Handle invalid choices
         else:
             print("Invalid choice. Try again.")
 
+# Entry point of the program
 if __name__ == "__main__":
     main()
