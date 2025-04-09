@@ -1,3 +1,12 @@
+Group Members
+Michael Karanja(672418)
+Patrick wamwea(673392)
+Jessicah  Otwoma(673748)
+Deng Deng       (673346)
+Ahmed Swaleh(672953)
+alvin kipkirui (673782)
+
+
 🧮 Unit Conversion Program
 This Python script is an interactive command-line program that performs a wide variety of **unit conversions**. It supports conversions across multiple categories, including **length**, **weight**, **temperature**, **time**, **speed**, and **volume**.
 
